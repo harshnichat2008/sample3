@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$color1: #492540;
+$color2: #c03546;
+$color3: #f26d5b;
+$color4: #f6ea8c;
+$font: "Poppins", sans-serif;
+
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin nav_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin link {
+  padding: 5px 20px;
+  border-radius: 30px;
+  color: $color4;
+  text-decoration: none;
+  border: 2px solid $color4;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+@mixin link_hover {
+  color: $color2;
+  background-color: $color4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+header {
+  width: 100%;
+  background-color: $color4;
+  box-shadow: 0px 1.4px 8.9px -18px rgba(0, 0, 0, 0.021),
+    0px 3.3px 17.3px -18px rgba(0, 0, 0, 0.032),
+    0px 6.3px 25.6px -18px rgba(0, 0, 0, 0.043),
+    0px 11.2px 34.6px -18px rgba(0, 0, 0, 0.055),
+    0px 20.9px 49px -18px rgba(0, 0, 0, 0.072),
+    0px 50px 105px -18px rgba(0, 0, 0, 0.13);
+  @include nav_flex();
+  .logo {
+    width: 180px;
+  }
+  nav {
+    @include flexbox();
+
+    ul {
+      @include flexbox();
+      text-transform: uppercase;
+      list-style-type: none;
+    }
+
+    a {
+      color: $color2;
+      text-decoration: none;
+      margin: 0px 20px;
+      font-family: $font;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: $color3;
+      }
+    }
+  }
+  .icons {
+    #search,
+    #profile,
+    #info {
+      font-size: 2rem;
+      color: $color2;
+      transition: 0.3s;
+      margin: 0px 10px;
+      cursor: pointer;
+      &:hover {
+        color: $color3;
+      }
+    }
+  }
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("smart watch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  @include flexbox();
+  .content {
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      font-family: $font;
+      line-height: 7rem;
+    }
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 0rem 5rem;
+    }
+    .ac {
+      width: 100%;
+      margin-top: 2px;
+      @include flexbox();
+      a {
+        @include link;
+        &:hover {
+          @include link_hover;
+        }
+      }
+    }
+  }
+}

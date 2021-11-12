@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #f6ea8c;
+  -webkit-box-shadow: 0px 1.4px 8.9px -18px rgba(0, 0, 0, 0.021), 0px 3.3px 17.3px -18px rgba(0, 0, 0, 0.032), 0px 6.3px 25.6px -18px rgba(0, 0, 0, 0.043), 0px 11.2px 34.6px -18px rgba(0, 0, 0, 0.055), 0px 20.9px 49px -18px rgba(0, 0, 0, 0.072), 0px 50px 105px -18px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 1.4px 8.9px -18px rgba(0, 0, 0, 0.021), 0px 3.3px 17.3px -18px rgba(0, 0, 0, 0.032), 0px 6.3px 25.6px -18px rgba(0, 0, 0, 0.043), 0px 11.2px 34.6px -18px rgba(0, 0, 0, 0.055), 0px 20.9px 49px -18px rgba(0, 0, 0, 0.072), 0px 50px 105px -18px rgba(0, 0, 0, 0.13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 180px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+header nav a {
+  color: #c03546;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  color: #f26d5b;
+}
+
+header .icons #search,
+header .icons #profile,
+header .icons #info {
+  font-size: 2rem;
+  color: #c03546;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+header .icons #search:hover,
+header .icons #profile:hover,
+header .icons #info:hover {
+  color: #f26d5b;
+}
+
+.home {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("smart watch.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("smart watch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .content h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  line-height: 7rem;
+}
+
+.home .content p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0rem 5rem;
+}
+
+.home .content .ac {
+  width: 100%;
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .content .ac a {
+  padding: 5px 20px;
+  border-radius: 30px;
+  color: #f6ea8c;
+  text-decoration: none;
+  border: 2px solid #f6ea8c;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home .content .ac a:hover {
+  color: #c03546;
+  background-color: #f6ea8c;
+}
+/*# sourceMappingURL=style.css.map */
